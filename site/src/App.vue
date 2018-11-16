@@ -2,8 +2,8 @@
 	<div>
 		<div>{{ titulo }}</div>
 		<ul>
-			<li v-for="menu of listaMenu">
-				<a v-bind:href="menu.link">{{ menu.nome }}</a>
+			<li v-for="menu of listaMenu" :key="menu.nome">
+				<a :href="menu.link">{{ menu.nome }}</a>
 			</li>
 		</ul>
 	</div>
@@ -20,9 +20,10 @@ export default {
 
   created() {
     //utilizando o VueResource $http
-    this.$http.get("http://localhost:3000/lista-menu")
+    this.$http
+      .get("http://localhost:3000/menu")
       .then(response => response.json())
-      .then(lista => this.listaMenu = lista);
+      .then(lista => (this.listaMenu = lista), err => console.log(err));;
   }
 };
 </script>
