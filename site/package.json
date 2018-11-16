@@ -2,7 +2,7 @@
   "name": "site",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "willserrano <willian.nascimentoserrano@gmail.com>",
+  "author": "will-serrano",
   "license": "MIT",
   "private": true,
   "scripts": {
