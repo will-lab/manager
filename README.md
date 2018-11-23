@@ -6,6 +6,7 @@ Frameworks e Plugins JS para criação do site:
 
 jquery
 vue.js
+vuetify.js
 List.js (listas)
 Datatable.js (tabelas e grids)
 Chart.js (graficos)
